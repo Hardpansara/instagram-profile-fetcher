@@ -7,21 +7,21 @@ This Flask-based web application allows you to fetch and display Instagram profi
 ### Features 🌟
 
 - Fetch Instagram profile data including:
-  - **Username** 🏷️
-  - **Full Name** 🧑‍🤝‍🧑
-  - **Bio** 📝
-  - **Followers** 👥
-  - **Following** 🔗
-  - **Posts count** 🖼️
-  - **Profile picture URL** 🖼️
-  - **External URL** 🔗
-  - **Business account status** 🏢
-  - **Verified status** ✅
-  - **Public/Private profile status** 🔒
-- Download and save the **profile picture** 🖼️ and **recent post media** (image or video) 🎥.
-- Store profile data in a structured **JSON format** 📂.
-- Generate an aesthetically designed **HTML report** with profile and recent post details 📊.
-- Log profile information into a **CSV file** with a timestamp ⏰.
+  - **Username** 
+  - **Full Name** 
+  - **Bio** 
+  - **Followers** 
+  - **Following** 
+  - **Posts count** 
+  - **Profile picture URL** 
+  - **External URL** 
+  - **Business account status** 
+  - **Verified status** 
+  - **Public/Private profile status** 
+- Download and save the **profile picture**  and **recent post media** (image or video) .
+- Store profile data in a structured **JSON format** .
+- Generate an aesthetically designed **HTML report** with profile and recent post details .
+- Log profile information into a **CSV file** with a timestamp .
 
 ---
 
@@ -111,17 +111,17 @@ This will return a JSON response containing the profile information.
 ```bash 
 instagram-profile-fetcher/
 │
-├── app.py                   # Main Flask application 🚀
-├── instagram_data_log.csv   # CSV log file 📝
-├── accounts_data/           # Folder where profile data is saved 📁
-│   └── instagram/           # Data for the 'instagram' username 📂
+├── app.py                   # Main Flask application 
+├── instagram_data_log.csv   # CSV log file 
+├── accounts_data/           # Folder where profile data is saved 
+│   └── instagram/           # Data for the 'instagram' username 
 │       ├── profile_data.json
 │       ├── report.html
 │       └── media/
 │           ├── profile_pic.jpg
 │           └── latest_post.jpg
-├── requirements.txt         # List of required Python packages 📜
-└── README.md                # Project documentation 📚
+├── requirements.txt         # List of required Python packages 
+└── README.md                # Project documentation 
 ```
 
 ---
@@ -134,24 +134,24 @@ instagram-profile-fetcher/
 
 - Requests
 ---
-### Dependencies 📦
+### Dependencies 
 The required Python libraries are listed in requirements.txt. Install them using:
 ```bash 
 pip install -r requirements.txt
 ```
 ---
-### Limitations 🚧
-- **Private Profiles 🔒:** Data fetching is not supported for private accounts that you do not follow. If the account is private, you will get a permission error.
+### Limitations 
+- **Private Profiles :** Data fetching is not supported for private accounts that you do not follow. If the account is private, you will get a permission error.
 
-- **Rate Limiting ⏱️:** Instagram may impose rate limits on profile requests. If you make too many requests in a short time, you might get temporarily blocked from fetching data. Please wait a few minutes before trying again.
+- **Rate Limiting :** Instagram may impose rate limits on profile requests. If you make too many requests in a short time, you might get temporarily blocked from fetching data. Please wait a few minutes before trying again.
 
-- **API Restrictions 🚫:** This application is based on the Instaloader library, which is limited by Instagram's own API restrictions. Some information (e.g., posts or stories) might be inaccessible if the account has privacy settings in place.
+- **API Restrictions :** This application is based on the Instaloader library, which is limited by Instagram's own API restrictions. Some information (e.g., posts or stories) might be inaccessible if the account has privacy settings in place.
 
-- **Limited Recent Post Fetch 📅:** Only the most recent post is fetched for public accounts. Older posts will not be retrieved.
+- **Limited Recent Post Fetch :** Only the most recent post is fetched for public accounts. Older posts will not be retrieved.
 
-- **Media Download Size 📥:** Large media files (e.g., videos) may take time to download, and the process could fail depending on the size and network conditions.
+- **Media Download Size :** Large media files (e.g., videos) may take time to download, and the process could fail depending on the size and network conditions.
 
-- **No Real-Time Updates 🔄:** This application does not update the profile data in real time. It fetches the data at the moment of the request.
+- **No Real-Time Updates :** This application does not update the profile data in real time. It fetches the data at the moment of the request.
 
 ---
 ### 🤝 Contributing
@@ -160,12 +160,12 @@ Contributions are welcome! Whether you're fixing a bug, improving documentation,
 
 #### How to Contribute
 
-1. 🍴 Fork the repository
-2. 🔧 Create a new branch (`git checkout -b feature-branch`)
-3. 💻 Make your changes
-4. ✅ Commit your changes (`git commit -m 'Add awesome feature'`)
-5. 🚀 Push to the branch (`git push origin feature-branch`)
-6. 🔁 Open a Pull Request
+1.  Fork the repository
+2.  Create a new branch (`git checkout -b feature-branch`)
+3.  Make your changes
+4.  Commit your changes (`git commit -m 'Add awesome feature'`)
+5.  Push to the branch (`git push origin feature-branch`)
+6.  Open a Pull Request
 
 We welcome suggestions, code improvements, feature requests, and constructive feedback.
 
@@ -175,8 +175,8 @@ We welcome suggestions, code improvements, feature requests, and constructive fe
 
 If you have any questions, suggestions, or want to collaborate directly:
 
-- 📧 Email: [Hard Pansara](hardpansara10@gmail.com)  
-- 🐙 GitHub: [Hardpansara](https://github.com/Hardpansara)  
-- 💼 LinkedIn: [Hard Pansara](http://linkedin.com/in/hard-pansara-22582a288) 
+-  Email: [Hard Pansara](hardpansara10@gmail.com)  
+-  GitHub: [Hardpansara](https://github.com/Hardpansara)  
+-  LinkedIn: [Hard Pansara](http://linkedin.com/in/hard-pansara-22582a288) 
 
-Let’s build something awesome together! 🚀
+Let’s build something awesome together! 
